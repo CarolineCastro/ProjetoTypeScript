@@ -1,12 +1,5 @@
 "use strict";
-function somarValores(input1, input2) {
-    if (typeof input1 === "string" || typeof input2 === "string") {
-        return input1.toString() + input2.toString();
-    }
-    else {
-        return input1 + input2;
-    }
+function somarValoresNumericos(num1, num2) {
+    return num1 + num2;
 }
-console.log(somarValores(1, 2));
-console.log(somarValores('olá, ', 'mundo'));
-console.log(somarValores('olá, ', 5));
+console.log(somarValoresNumericos(1, 3));
