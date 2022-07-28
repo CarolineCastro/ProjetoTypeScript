@@ -18,3 +18,9 @@ let stringTest2: string = 'agora vai'
 if(typeof unknownValue === 'string'){
     stringTest2 = unknownValue;
 }
+
+function jogaErro(erro: string, codigo: number): never {
+    throw {error: erro, code: codigo};
+}
+
+jogaErro('deu erro', 500);
